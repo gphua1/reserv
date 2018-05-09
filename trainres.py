@@ -8,8 +8,6 @@ import time
 import math
 import random
 import pickle
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
 def findFiles(path): return glob.glob(path)
 import unicodedata
 import string
@@ -198,9 +196,7 @@ for iter in range(1, n_iters + 1):
 torch.save(rnn,'resv.pt')
 print('acc')
 print(correct/1000)
-plt.figure()
-plt.plot(all_losses)
-plt.show()
+
 
 
 
